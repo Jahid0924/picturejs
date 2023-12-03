@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .container {
+    position: absolute;
+    top: 200px;
+    /* height: 400px; */
+    width: 500px;
+    background-color: rgb(16, 39, 36);
+  }
+  .box {
+    height: 300px;
+    width: 460px;
+    background-color: white;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #00ffbb;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    /* margin-top: 30px; */
+    margin-right: 50px;
+    background-color: aquamarine;
+  }
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 460px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(1 , 254 , 223);
+    margin-left: 50px;
+  }
+  button > svg {
+    background-color: transparent;
+  }
+  h1 {
+    position: absolute;
+    top: 620px;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 20px #00ffbb);
+    animation: Animate 2s alternate infinite;
+    animation-delay: 1s;
+    
+    color: white;
+    
+  }
+  
+  
+  @keyframes Animate {
+  0% {
+      filter: drop-shadow(0 0 8px #33c6ce);
+  }
+  100% {
+      filter: drop-shadow(0 25px #00ffe5);
+    }
+  }
+  
+  .btn {
+    /* background-color: #00ffbb;
+    box-shadow: 0px 0px 20px #00ffbb; */
+    cursor: pointer;
+  }
+  h3 {
+    margin: 10px;
+  }
+  
+  @media screen and (max-width:400px) {
+  
+    .container{
+      max-width: 220px;
+    }
+    .box {
+      margin: 10px;
+      max-width: 200px;
+      height: 190px;
+      border: 1px solid #00ffbb;
+    }
+    #imag {
+      max-width: 200px;
+      height: 190px;
+    }
+    a {
+      font-size: 0.65rem;
+      margin-left: 13px;
+    }
+    button {
+      margin-right: 12px;
+    }
+    svg {
+      width: 15px;
+    }
+    .btn-container{
+      margin-bottom: 10px;
+    }
+    h1 {
+      top: 500px;
+      margin-left: 30px;
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 0.85rem;
+    }
+  }
+  
+  .orge {
+   background-color: orange;
+    box-shadow:  0px 0px 20px orange;
+    transition : 0.8s ease;
+  }
+  .cyn {
+    background-color: #00ffbb;
+    box-shadow: 0px 0px 20px #00ffbb;
+    transition : 0.8s ease;
+  }
